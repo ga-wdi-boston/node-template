@@ -17,14 +17,5 @@
 
   "test": {
     "specs": ["<%=  paths.tests %> "]
-  },
-
-  "for_sublime_text": {
-    "specs": ["<%=  paths.tests %> "],
-    "options": {
-      "reporters": {
-        "tap": true
-      }
-    }
   }
 }
