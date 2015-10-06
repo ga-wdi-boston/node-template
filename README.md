@@ -60,3 +60,9 @@ Type these at the command line to see useful things happen.
     * `grunt jsbeautifier:status` finds parts of your code that could be beautified
 
 * `grunt reformat` - reformats all your code in a standard style
+
+[License](LICENSE)
+------------------
+
+Source code distributed under the MIT license. Text and other assets copyright
+General Assembly, Inc., all rights reserved.
