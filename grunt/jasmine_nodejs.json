@@ -1,21 +1,15 @@
 {
   "options": {
     "specNameSuffix": "spec.js",
-    "helperNameSuffix": "helper.js",
-    "useHelpers": false,
     "stopOnFailure": false,
     "reporters": {
       "console": {
-        "colors": true,
-        "cleanStack": 1,
-        "verbosity": 3,
-        "listStyle": "indent",
-        "activity": false
+        "verbosity": 3
       }
     }
   },
 
   "test": {
-    "specs": ["<%=  paths.tests %> "]
+    "specs": ["<%=  paths.src.spec %> "]
   }
 }
