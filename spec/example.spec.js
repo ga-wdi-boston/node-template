@@ -2,8 +2,8 @@
 
 var example = require('../lib/example');
 
-describe('Example', function() {
-  it('is true', function() {
+describe('Example', () => {
+  it('is true', () => {
     expect(example()).toBe(true);
   });
 });
