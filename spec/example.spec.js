@@ -1,5 +1,8 @@
 'use strict';
 
+// Allow chai syntax like `expect(foo).to.be.ok;`
+// jshint -W030
+
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 
@@ -11,7 +14,7 @@ const example = require('../lib/example');
 
 describe('Sync', function () {
   it('is true', function () {
-    return expect(example.sync(true)).to.be.true;
+    expect(example.sync(true)).to.be.true;
   });
 });
 
@@ -29,6 +32,6 @@ describe('Async', function () {
 
 describe('Promise', function () {
   it('is true', function () {
-    return expect(example.promise(true)).to.eventually.be.true;
+    expect(example.promise(true)).to.eventually.be.true;
   });
 });
