@@ -32,6 +32,6 @@ describe('Async', function () {
 
 describe('Promise', function () {
   it('is true', function () {
-    expect(example.promise(true)).to.eventually.be.true;
+    return expect(example.promise(true)).to.eventually.be.true;
   });
 });
