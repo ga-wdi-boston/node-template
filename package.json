@@ -2,7 +2,10 @@
   "name": "ga-wdi-boston.node-template",
   "version": "0.0.1",
   "private": true,
-  "license": "MIT",
+  "license": {
+    "software": "GNU GPLv3",
+    "content": "CC­BY­NC­SA 4.0"
+  },
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
