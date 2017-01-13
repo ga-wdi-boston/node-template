@@ -29,6 +29,8 @@ Developers should store JavaScript files in [`lib`](lib). If an entry point is
 needed, it can go in the root of the project; `index.js` is the node default;
 `app.js`, `main.js`, or `server.js` might be appropriate depending on the task.
 
+`grunt server` will start `nodemon` on `bin/index.js`.
+
 ## Tasks
 
 Developers should run these often!
