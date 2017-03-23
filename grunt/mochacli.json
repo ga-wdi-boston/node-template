@@ -1,5 +1,6 @@
 {
   "options": {
+    "files": ["<%=  paths.src.spec %> "]
   },
-  "all": ["<%=  paths.src.spec %> "]
+  "test": {}
 }
