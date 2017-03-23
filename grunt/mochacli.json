@@ -1,6 +1,11 @@
 {
   "options": {
-    "files": ["<%=  paths.src.spec %> "]
+    "files": ["<%= paths.src.spec %>"]
   },
-  "test": {}
+  "test": {},
+  "watch": {
+    "options": {
+      "flags": ["--watch"]
+    }
+  }
 }
