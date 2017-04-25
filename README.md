@@ -31,6 +31,39 @@ needed, it can go in the root of the project; `index.js` is the node default;
 
 `grunt server` will start `nodemon` on `bin/index.js`.
 
+## Code blocks
+
+With this in the markdown:
+
+&lt;!-- start code block file="lib/example.js" --&gt;
+
+This gets replaced with the contents of `lib/example.js`
+
+&lt;!-- end code block --&gt;
+
+running:
+
+```sh
+cp README.md README.bak
+bin/add-code-block.js README.bak >README.md
+```
+
+produces:
+
+<!-- start code block file="lib/example.js" -->
+```js
+'use strict'
+
+module.exports = {
+  sync: (value) => value,
+  async: (value, cb) => setTimeout(() => cb(null, value), 0),
+  promise: (value) => Promise.resolve(value)
+}
+```
+<!-- end code block -->
+
+Check the markdown source to see what happens.
+
 ## Tasks
 
 Developers should run these often!
